@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HelthUp : MonoBehaviour
+public class HealthUp : MonoBehaviour
 {
     [SerializeField] private float cure;
 
