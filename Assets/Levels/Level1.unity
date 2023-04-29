@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 558, y: -88.649994}
+  m_AnchoredPosition: {x: 558, y: -88.6499}
   m_SizeDelta: {x: 960, y: 132.87799}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440655086
@@ -920,8 +920,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.3
   player: {fileID: 1024586171}
-  aheadDistance: 5
-  cameraSpeed: 0.5
+  aheadDistance: 1
+  cameraSpeed: 10
 --- !u!1 &528430718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,7 +1720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 558, y: -88.649994}
+  m_AnchoredPosition: {x: 558, y: -88.6499}
   m_SizeDelta: {x: 960, y: 132.87799}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849847349
@@ -2702,8 +2702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecaec630af6d8f47a5c08f9173b3020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
-  iFramesDuration: 3
+  startingHealth: 5
+  iFramesDuration: 2
   numbersOfFlashes: 3
 --- !u!114 &1024586176
 MonoBehaviour:
@@ -3671,7 +3671,7 @@ GameObject:
   - component: {fileID: 1518883513}
   - component: {fileID: 1518883512}
   m_Layer: 0
-  m_Name: cellar
+  m_Name: Cellar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5062,7 +5062,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8472214011822543960, guid: f283e29ac8771794d9336a64082645a3, type: 3}
       propertyPath: m_Name
-      value: Dmg
+      value: FloatingFrog
       objectReference: {fileID: 0}
     - target: {fileID: 8472214011822543960, guid: f283e29ac8771794d9336a64082645a3, type: 3}
       propertyPath: m_Layer

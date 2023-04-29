@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8472214011822543965}
   - component: {fileID: 8472214011822543962}
   m_Layer: 11
-  m_Name: Dmg
+  m_Name: FloatingFrog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
