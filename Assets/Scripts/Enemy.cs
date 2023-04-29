@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            print("This is a print message");
+            
             collision.GetComponent<Health>().TakeDamage(damage);
         }
 
