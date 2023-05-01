@@ -216,6 +216,7 @@ MonoBehaviour:
   - {fileID: 5427547049926281931}
   - {fileID: 5427547049521972438}
   - {fileID: 5427547051524228107}
+  arrowSound: {fileID: 8300000, guid: ca2c978a375051b4fa096aef4726db34, type: 3}
 --- !u!1001 &3952323869729479406
 PrefabInstance:
   m_ObjectHideFlags: 0

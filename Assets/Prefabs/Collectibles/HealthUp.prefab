@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3868845857812058995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.05, y: -2.27, z: -0.014978372}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cure: 1
+  pickUpSound: {fileID: 8300000, guid: 4908eaff1738e884d852609ee01ab650, type: 3}

@@ -17,6 +17,9 @@ public class FireTrap : MonoBehaviour
 
     private Health playerHealth;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip activeSound;
+
     private void Awake()
     {
         fireTrapAnimation = GetComponent<Animator>();
@@ -59,6 +62,7 @@ public class FireTrap : MonoBehaviour
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(activationDelay);
         //zmiana koloru na oryginalny i aktywacja pu³apki
+        SoundManager.instance.PlaySound(activeSound);
         spriteRenderer.color = Color.white;
         active = true;
         fireTrapAnimation.SetBool("active", true);
