@@ -7,7 +7,7 @@ public class LoadingManager : MonoBehaviour
 {
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.G))
             SceneManager.LoadScene(1);
     }
 }

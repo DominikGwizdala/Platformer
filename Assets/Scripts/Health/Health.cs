@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 public class Health : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class Health : MonoBehaviour
         {
             if(!dead)
             {
+                anim.SetBool("grounded", true);
                 anim.SetTrigger("die");
                
 
@@ -56,6 +58,16 @@ public class Health : MonoBehaviour
             
 
         }
+    }
+    public void Respawn()
+    {
+        dead= false;
+        HpUp(startingHealth);
+        anim.ResetTrigger("die");
+        anim.Play("Idle");
+
+        foreach (Behaviour component in components)
+            component.enabled = true;
     }
    public void HpUp(float _health)
     {
