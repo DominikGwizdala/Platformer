@@ -182,7 +182,9 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 0
   numbersOfFlashes: 0
-  components: []
+  components:
+  - {fileID: 4420132146481525441}
+  - {fileID: 6996080814869729610}
   hitSound: {fileID: 8300000, guid: bd74ac50d1daefd4cb85aa23bdcacc21, type: 3}
   deathSound: {fileID: 0}
 --- !u!114 &4420132146481525441

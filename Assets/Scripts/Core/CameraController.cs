@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private float aheadDistance;
     [SerializeField] private float cameraSpeed;
+    [SerializeField] private float YCamera;
     private float lookAhead;
 
     private void Update()
@@ -19,7 +20,7 @@ public class CameraController : MonoBehaviour
        // transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
        
         //Za graczem
-        transform.position = new Vector3(player.position.x + lookAhead, player.position.y , transform.position.z);
+        transform.position = new Vector3(player.position.x + lookAhead, player.position.y + YCamera, transform.position.z);
 
         lookAhead = Mathf.Lerp(lookAhead,(aheadDistance * player.localScale.x), Time.deltaTime * cameraSpeed);
     }
