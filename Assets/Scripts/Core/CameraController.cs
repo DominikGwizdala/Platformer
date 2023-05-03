@@ -17,10 +17,13 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         //na pokój
-       // transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
-       
+        // transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
+
         //Za graczem
-        transform.position = new Vector3(player.position.x + lookAhead, player.position.y + YCamera, transform.position.z);
+        if(player.position.y >= -1)
+            transform.position = new Vector3(player.position.x + lookAhead, player.position.y, transform.position.z);
+        else
+            transform.position = new Vector3(player.position.x + lookAhead, -1, transform.position.z);
 
         lookAhead = Mathf.Lerp(lookAhead,(aheadDistance * player.localScale.x), Time.deltaTime * cameraSpeed);
     }

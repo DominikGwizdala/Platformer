@@ -11,9 +11,11 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         source = GetComponent<AudioSource>();
-        musicsource =transform.GetChild(0).GetComponent<AudioSource>();
-        //nie nieszcz obiektu po przejœciu do nowej sceny
-        if (instance == null)
+        musicsource = transform.GetChild(0).GetComponent<AudioSource>();
+        //usuñ to jeœli odkometowujesz kod poni¿ej
+        instance = this;
+        //nie niszcz obiektu po przejœciu do nowej sceny
+        /*if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -21,7 +23,7 @@ public class SoundManager : MonoBehaviour
         //usuwanie duplikatów
         else if (instance != null && instance != this)
             Destroy(gameObject);
-
+        */
         ChangeMusicVolume(0);
         ChangeSoundVolume(0);
     }

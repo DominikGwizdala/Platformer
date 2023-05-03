@@ -47,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
         moveAnimation.SetBool("run", horizontalInput != 0);
         moveAnimation.SetBool("grounded", isGrounded());
 
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             Jump();
-        if (Input.GetKeyUp(KeyCode.UpArrow) && body.velocity.y>0)
+        if (Input.GetKeyUp(KeyCode.UpArrow) && body.velocity.y>0 || Input.GetKeyUp(KeyCode.W) && body.velocity.y > 0)
             body.velocity =  new Vector2(body.velocity.x,body.velocity.y /2);
         if (onWall())
         {

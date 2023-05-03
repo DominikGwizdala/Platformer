@@ -66,5 +66,10 @@ private void Awake()
         SoundManager.instance.ChangeMusicVolume(0.2f);
     }
     #endregion
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
 

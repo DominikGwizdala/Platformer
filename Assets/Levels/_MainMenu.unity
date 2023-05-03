@@ -508,9 +508,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 667180796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bfa46f5ce2e6854799f54f49723e053, type: 3}
+  m_Script: {fileID: 11500000, guid: 6602edd796ba0c84e8bdbaf3e753cca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
+  gameOverSound: {fileID: 0}
+  pauseScreen: {fileID: 0}
 --- !u!1 &819632321
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132.7, y: 21.2}
+  m_AnchoredPosition: {x: -163.8, y: 18.9}
   m_SizeDelta: {x: 49.227, y: 49.227}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819632323
@@ -672,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844246153
@@ -751,7 +754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 44.932007}
+  m_AnchoredPosition: {x: 0, y: 44.932}
   m_SizeDelta: {x: 368.742, y: 89.865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &882176683
@@ -799,7 +802,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 667180801}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -1110,7 +1113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000095367, y: -316}
+  m_AnchoredPosition: {x: -0.0000095318, y: -293}
   m_SizeDelta: {x: 368.742, y: 89.865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793513810
@@ -1158,7 +1161,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 667180801}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -1278,7 +1281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 157.95728}
+  m_AnchoredPosition: {x: 0, y: 157.1}
   m_SizeDelta: {x: 730.61304, y: 178.055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814752213
