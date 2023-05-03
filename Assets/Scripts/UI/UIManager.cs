@@ -38,6 +38,7 @@ private void Awake()
     }
     public void MainMenu()
     {
+        PauseGame(false);
         SceneManager.LoadScene(0);
     }
     public void Quit()
@@ -67,9 +68,6 @@ private void Awake()
     }
     #endregion
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
-    }
+    
 }
 
