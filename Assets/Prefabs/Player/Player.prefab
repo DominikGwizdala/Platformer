@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52bd5cd3d58ab364baa3469845b3fb8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkpointSound: {fileID: 8300000, guid: 4908eaff1738e884d852609ee01ab650, type: 3}
 --- !u!50 &4525020648941329448
 Rigidbody2D:
   serializedVersion: 4
@@ -196,11 +197,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  jumpHeight: 10
+  jumpHeight: 20
   coyoteTime: 0.25
-  extrtaJump: 0
-  wallJumpX: 0
-  wallJumpY: 0
+  extrtaJump: 2
+  wallJumpX: 2000
+  wallJumpY: 750
   platformLayer:
     serializedVersion: 2
     m_Bits: 256

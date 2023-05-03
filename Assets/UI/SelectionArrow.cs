@@ -51,6 +51,6 @@ public class SelectionArrow : MonoBehaviour
         SoundManager.instance.PlaySound(interactSound);
 
         options[currentPosition].GetComponent<Button>().onClick.Invoke();//Nie dzia³a na silniku 
-        UnityEditor.EditorApplication.isPlaying= false;//dzia³a na silniku
+        
     }
 }

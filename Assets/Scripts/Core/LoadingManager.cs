@@ -8,6 +8,6 @@ public class LoadingManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
     }
 }
