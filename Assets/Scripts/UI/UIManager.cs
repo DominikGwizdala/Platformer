@@ -23,6 +23,7 @@ private void Awake()
                 PauseGame(true);
         }
     }
+  
     #region GameOver
     public void GameOver()
     {
@@ -48,7 +49,7 @@ private void Awake()
         #endif
     }
     #endregion
-    #region
+    #region Pause
     
     public void PauseGame(bool status)
     {
