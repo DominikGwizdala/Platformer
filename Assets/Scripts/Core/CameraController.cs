@@ -21,10 +21,10 @@ public class CameraController : MonoBehaviour
 
         //Za graczem
         
-         if (player.position.y >= -1)
+         if (player.position.y >= -0.5f)
             transform.position = new Vector3(player.position.x + lookAhead, player.position.y, transform.position.z); 
         else
-            transform.position = new Vector3(player.position.x + lookAhead, -1, transform.position.z);
+            transform.position = new Vector3(player.position.x + lookAhead, -0.5f, transform.position.z);
 
         lookAhead = Mathf.Lerp(lookAhead,(aheadDistance * player.localScale.x), Time.deltaTime * cameraSpeed);
     }
