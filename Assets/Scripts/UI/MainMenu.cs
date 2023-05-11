@@ -18,4 +18,8 @@ public class MainMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
