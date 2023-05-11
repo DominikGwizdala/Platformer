@@ -14,12 +14,16 @@ public class NextLevel : MonoBehaviour
 
     public enum Scene
     {
-        MainMenu,
+        _MainMenu,
         Plot,
         Level01,
         Level02,
         Credits,
 
+    }
+    public void LoadNewGame()
+    {
+        SceneManager.LoadScene(Scene._MainMenu.ToString());
     }
     public void LoadScene(Scene scene)
     {
